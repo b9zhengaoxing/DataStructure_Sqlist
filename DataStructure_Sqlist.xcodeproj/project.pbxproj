@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F1ECA72D1BA1460E00302585 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1ECA72C1BA1460E00302585 /* main.cpp */; };
+		F1ECA7361BA1464D00302585 /* SqList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1ECA7341BA1464D00302585 /* SqList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		F1ECA7291BA1460E00302585 /* DataStructure_Sqlist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure_Sqlist; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ECA72C1BA1460E00302585 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F1ECA7341BA1464D00302585 /* SqList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqList.cpp; sourceTree = "<group>"; };
+		F1ECA7351BA1464D00302585 /* SqList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqList.h; sourceTree = "<group>"; };
+		F1ECA73A1BA1475100302585 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,20 @@
 		F1ECA72B1BA1460E00302585 /* DataStructure_Sqlist */ = {
 			isa = PBXGroup;
 			children = (
+				F1ECA7331BA1461B00302585 /* 顺序表示 */,
 				F1ECA72C1BA1460E00302585 /* main.cpp */,
+				F1ECA73A1BA1475100302585 /* Common.h */,
 			);
 			path = DataStructure_Sqlist;
+			sourceTree = "<group>";
+		};
+		F1ECA7331BA1461B00302585 /* 顺序表示 */ = {
+			isa = PBXGroup;
+			children = (
+				F1ECA7341BA1464D00302585 /* SqList.cpp */,
+				F1ECA7351BA1464D00302585 /* SqList.h */,
+			);
+			name = "顺序表示";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1ECA72D1BA1460E00302585 /* main.cpp in Sources */,
+				F1ECA7361BA1464D00302585 /* SqList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
