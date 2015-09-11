@@ -22,7 +22,10 @@ Status InitList(SqList &L){
 Status DestroyList(SqList &L){
     //操作结果：销毁线性表L。
     
-    free(&L);
+    free(L.elem);
+    L.elem=NULL;
+    L.length=0;
+    L.listsize=0;
     
     return OK;
 }
@@ -38,7 +41,8 @@ bool ListEmpty(SqList L){
     
     if(0 == L.length)
         return true;
-    else return false;
+    else
+        return false;
 }
 
 int ListLength(SqList L){
@@ -62,8 +66,11 @@ int LocateElem(SqList L, ElemType e, bool (*equal)(ElemType, ElemType)){
     
     int i = 1;
     ElemType* p = L.elem;
-    while(i <= L.length  &&  !(*equal)(*p++, e)) ++i;
-    if(i <= L.length) return i;
+    while(i <= L.length  &&  !(*equal)(*p++, e))
+        ++i;
+    if(i <= L.length)
+        return i;
+    
     else return 0;
 }
 
